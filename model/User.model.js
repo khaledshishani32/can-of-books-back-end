@@ -39,4 +39,8 @@ const seedUserData = () => {
   };
   
 
-  module.exports = userModel;
+  module.exports = {
+    userModel,
+    seedUserData
+  
+  };

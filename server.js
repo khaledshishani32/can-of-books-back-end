@@ -4,9 +4,9 @@ const app = express() // initialize your express app instance
 const axios = require('axios');
 const mongoose = require('mongoose');
 require('dotenv').config();
-const seedUserData = require('./model/User.model')
+const {seedUserData} = require('./model/User.model')
 const userController= require('./controllers/User.controller')
-const userModel= require('./model/User.model')
+const {userModel}= require('./model/User.model')
 
  
 const PORT = process.env.PORT
