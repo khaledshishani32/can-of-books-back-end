@@ -59,7 +59,7 @@ const deletebooks = (request, response) => {
         if (error) {
             response.send(error)
         } else {
-            userData.books.splice(booksIndex, 1);
+            userData.books.splice(booksIndex,1);
             userData.save();
             response.send(userData)
         }
